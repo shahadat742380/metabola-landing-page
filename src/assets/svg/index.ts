@@ -3,7 +3,7 @@ import LogoWhite from "./LogoWhite";
 import IcoFacebook from "./IcoFacebook";
 import IcoInstagram from "./IcoInstagram";
 import IcoTwitter from "./IcoTwitter";
-import IcoLinkedin from "./IcoLinkedin";
+import IcoYoutube from "./IcoYoutube";
 import IcoQr from "./IcoQr";
 import IcoBanner from "./IcoBanner";
 import IcoDot from "./IcoDot";
@@ -20,9 +20,7 @@ import IcoProductHunt from "./IcoProductHunt";
 import IcoCapterra from "./IcoCapterra";
 import IcoStar from "./IcoStar";
 
-import IcoPlus from "./IcoPlus";
-import IcoMinus from "./IcoMinus";
-
+import IcoRightArrow from "./IcoRightArrow";
 import IcoCheck from "./IcoCheck";
 
 export {
@@ -30,7 +28,7 @@ export {
   LogoWhite,
   IcoFacebook,
   IcoInstagram,
-  IcoLinkedin,
+  IcoYoutube,
   IcoTwitter,
   IcoBanner,
   IcoDot,
@@ -45,8 +43,7 @@ export {
   IcoProductHunt,
   IcoGetApp,
   IcoTrustPilot,
-  IcoMinus,
-  IcoPlus,
   IcoCheck,
-  IcoStar
+  IcoStar,
+  IcoRightArrow,
 };

@@ -9,7 +9,7 @@ const config: Config = {
         background: "#E1FFFD",
         gray_: "#2F2F2F",
         black_: "#111111",
-        stock_: "#E4E4E7",
+        stock: "#E4E4E7",
       },
     },
   },

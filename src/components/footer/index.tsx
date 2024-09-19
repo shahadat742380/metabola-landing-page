@@ -12,8 +12,8 @@ import { Typography } from "../ui/Typography";
 import {
   IcoFacebook,
   IcoInstagram,
-  IcoLinkedin,
   IcoTwitter,
+  IcoYoutube,
   LogoWhite,
 } from "@/assets/svg";
 
@@ -73,98 +73,90 @@ const Footer = () => {
           <div className="shrink-0 max-w-[300px]">
             <LogoWhite />
             <Typography
-              variant="Regular_H6"
-              className={`block mt-4 text-gray_`}
+              variant="Medium_H6"
+              className={`block mt-[9px] text-stock`}
             >
-              From concept to reality, transforms dreams into achievements. Join
-              our visionary community and thrive.
+              Lorem ipsum dolor sit amet consectetur. Malesuada feugiat nec.
             </Typography>
             <div className="mt-4">
               <Typography
-                variant="Regular_H6"
-                className={`block`}
+                variant="Medium_H6"
+                className={`block text-stock`}
                 link={config.PHONE}
               >
-                <span className="text-gray_">Ph. No:</span> +91 95959 95959
+                <span className="text-stock">Ph. No:</span> +91 95755 95775
               </Typography>
               <Typography
-                variant="Regular_H6"
-                className={`block `}
+                variant="Medium_H6"
+                className={`block text-stock`}
                 link={config.EMAIL}
               >
-                <span className="text-gray_">Email:</span> info@ezyconsult.com
+                <span className="text-stock">Email:</span> info@Metabola.com
               </Typography>
             </div>
             <div className="flex gap-4 mt-6">
+              <Link target="_blank" href={config.INSTAGRAM_URL}>
+                <IcoInstagram />
+              </Link>
               <Link target="_blank" href={config.TWITTER_URL}>
                 <IcoTwitter />
               </Link>
               <Link target="_blank" href={config.FACEBOOK_URL}>
                 <IcoFacebook />
               </Link>
-              <Link target="_blank" href={config.INSTAGRAM_URL}>
-                <IcoInstagram />
-              </Link>
-              <Link target="_blank" href={config.LINKEDIN_URL}>
-                <IcoLinkedin />
+              <Link target="_blank" href={config.YOUTUBE_URL}>
+                <IcoYoutube />
               </Link>
             </div>
           </div>
 
           <div className="flex justify-between md:justify-start gap-10 md:gap-32">
+
             {/* Links */}
             <nav>
               <Typography
-                variant="Medium_H5"
-                className=" mb-8 block text-gray_"
+                variant="SemiBold_H5"
+                className=" mb-6 block text-white"
               >
                 Links
               </Typography>
-              <ul className="space-y-4 text-black_">
+              <ul className="space-y-4 text-stock">
+               
                 <li>
-                  <button
-                    onClick={() => handleNavigation("home")}
-                    className="block text-base font-medium  transition-all duration-200 hover:translate-x-1 "
+                  <Link
+                    href="/"
+                    className="block text-base  transition-all duration-200 hover:translate-x-1 "
                   >
-                    Home
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => handleNavigation("aboutUs")}
-                    className="block text-base font-medium  transition-all duration-200 hover:translate-x-1 "
-                  >
-                    About us
-                  </button>
+                   Home
+                  </Link>
                 </li>
 
                 <li>
-                  <button
-                    onClick={() => handleNavigation("services")}
-                    className="block text-base font-medium  transition-all duration-200 hover:translate-x-1 "
+                  <Link
+                    href="#"
+                    className="block text-base transition-all duration-200 hover:translate-x-1 "
                   >
-                    Services
-                  </button>
+                    Company
+                  </Link>
                 </li>
                 <li>
-                  <button
-                    onClick={() => handleNavigation("experts")}
-                    className="block text-base font-medium  transition-all duration-200 hover:translate-x-1 "
+                  <Link
+                    href="#"
+                    className="block text-base  transition-all duration-200 hover:translate-x-1 "
                   >
-                    Experts
-                  </button>
+                    Products
+                  </Link>
                 </li>
                 <li>
-                  <button
-                    onClick={() => handleNavigation("blog")}
-                    className="block text-base font-medium  transition-all duration-200 hover:translate-x-1 "
+                  <Link
+                    href="#"
+                    className="block text-base  transition-all duration-200 hover:translate-x-1 "
                   >
-                    Blogs
-                  </button>
+                    Service
+                  </Link>
                 </li>
               </ul>
             </nav>
-
             {/* Other Links */}
             <nav>
               <Typography
@@ -179,7 +171,7 @@ const Footer = () => {
                     onClick={() => {
                       setOpenModal(true);
                     }}
-                    className="block text-base font-medium  transition-all duration-200 hover:translate-x-1 "
+                    className="block text-base  transition-all duration-200 hover:translate-x-1 "
                   >
                     Contact us
                   </button>
@@ -188,7 +180,7 @@ const Footer = () => {
                   <Link
                     href="/help-support"
                     target="_blank"
-                    className="block text-base font-medium  transition-all duration-200 hover:translate-x-1 "
+                    className="block text-base  transition-all duration-200 hover:translate-x-1 "
                   >
                     Help & Support
                   </Link>
@@ -198,7 +190,7 @@ const Footer = () => {
                   <Link
                     href="/terms-conditions"
                     target="_blank"
-                    className="block text-base font-medium  transition-all duration-200 hover:translate-x-1 "
+                    className="block text-base  transition-all duration-200 hover:translate-x-1 "
                   >
                     Terms & Conditions
                   </Link>
@@ -207,7 +199,7 @@ const Footer = () => {
                   <Link
                     href="/privacy-policy"
                     target="_blank"
-                    className="block text-base font-medium  transition-all duration-200 hover:translate-x-1 "
+                    className="block text-base  transition-all duration-200 hover:translate-x-1 "
                   >
                     Privacy Policy
                   </Link>
