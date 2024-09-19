@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .bgImg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .treatment-bg {
+    background-image: url(../assets/images/treatment//bg.webp);
+  }
+}
+
+
+/* react-multi-carousel related style */
+.react-multi-carousel-dot button {
+  width: 8px !important;
+  height: 8px !important;
+  border: 0 !important;
+  border-radius: 100% !important;
+  background-color: #AEAEAE !important;
+}
+
+.react-multi-carousel-dot--active button {
+  background-color: #0D8079 !important;
+  width: 25px !important;
+  border-radius: 16px !important;
+}
+
+.brands .react-multi-carousel-list {
+  height: 200px;
+}
+
+.react-multi-carousel-dot-list {
+  bottom: 44px !important;
+}
+
+.review .react-multi-carousel-list {
+  overflow: hidden !important;
+}
+
+/* phone input */
+
+.react-tel-input {
+  font-family: inherit !important;
+}
+
+.form-control {
+  border: 1px solid #E3E3E3 !important;
+  border-radius: 8px !important;
+  padding-left: 70px !important;
+  width: 100% !important;
+  height: 50px !important;
+  font-size: 16px !important;
+}
+
+.form-control:focus {
+  border: 2px solid rgb(30, 136, 299);
+}
+
+.flag-dropdown {
+  background: none !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+  left: 16px !important;
+  top: -5px !important;
+}
