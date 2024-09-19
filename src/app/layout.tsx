@@ -11,7 +11,6 @@ import { Toaster } from "react-hot-toast";
 // import components
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import ContactModal from "@/components/modal";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -89,7 +88,6 @@ export default function RootLayout({
       <body className={poppins.className} suppressHydrationWarning={true}>
         <Navbar />
         {children}
-        <ContactModal />
         <Footer />
         <Toaster />
       </body>

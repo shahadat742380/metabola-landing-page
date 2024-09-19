@@ -20,15 +20,13 @@ import {
 // import config
 import { config } from "@/config";
 
-// import jotai
-import { useSetAtom } from "jotai";
-import { openModalAtom } from "@/app/jotaiStore";
 
 // import jotai and hook form
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import toast from "react-hot-toast";
+import BtnPrimary from "../ui/BtnPrimary";
 
 // ** define validation schema using zod **
 const contactSchema = z.object({
@@ -40,7 +38,6 @@ type ContactFormValues = z.infer<typeof contactSchema>;
 const Footer = () => {
   const location = usePathname();
   const currentYear = new Date().getFullYear();
-  const setOpenModal = useSetAtom(openModalAtom);
 
   const handleNavigation = (section: string) => {
     // Redirect to home page with a hash anchor link
@@ -111,7 +108,6 @@ const Footer = () => {
           </div>
 
           <div className="flex justify-between md:justify-start gap-10 md:gap-32">
-
             {/* Links */}
             <nav>
               <Typography
@@ -121,13 +117,12 @@ const Footer = () => {
                 Links
               </Typography>
               <ul className="space-y-4 text-stock">
-               
                 <li>
                   <Link
                     href="/"
                     className="block text-base  transition-all duration-200 hover:translate-x-1 "
                   >
-                   Home
+                    Home
                   </Link>
                 </li>
 
@@ -160,21 +155,20 @@ const Footer = () => {
             {/* Other Links */}
             <nav>
               <Typography
-                variant="Medium_H5"
-                className=" mb-8 block text-gray_"
+                variant="SemiBold_H5"
+                className=" mb-6 block text-stock"
               >
                 Others
               </Typography>
-              <ul className="space-y-4 text-black_">
+              <ul className="space-y-4 text-stock">
                 <li>
-                  <button
-                    onClick={() => {
-                      setOpenModal(true);
-                    }}
+                  <Link
+                    href="/#"
+                    target="_blank"
                     className="block text-base  transition-all duration-200 hover:translate-x-1 "
                   >
-                    Contact us
-                  </button>
+                    Contact Us
+                  </Link>
                 </li>
                 <li>
                   <Link
@@ -212,15 +206,8 @@ const Footer = () => {
           <div className="shrink-0 ">
             <div className="">
               <div className="max-w-[300px]">
-                <Typography variant="Medium_H5" className={`block text-gray_`}>
+                <Typography variant="Medium_H5" className={`block text-white`}>
                   Newsletter
-                </Typography>
-                <Typography
-                  variant="Regular_H6"
-                  className={`block text-gray_ text-[13px] md:text-[13px] mt-2`}
-                >
-                  The latest news, articles, and resources, sent to your inbox
-                  weekly.
                 </Typography>
               </div>
 
@@ -230,7 +217,7 @@ const Footer = () => {
                     <input
                       {...register("email")}
                       type="text"
-                      className="w-full rounded-lg border py-3 px-4 "
+                      className="w-full  border py-3 px-4 "
                       placeholder="Enter your email address "
                     />
                     {errors.email && (
@@ -239,12 +226,11 @@ const Footer = () => {
                       </p>
                     )}
                   </div>
-                  <button
+                  <BtnPrimary
                     type="submit"
-                    className="bg-primary w-full py-3 rounded-lg text-white mt-4 text-base md:text-xl font-semibold"
-                  >
-                    Subscribe Now
-                  </button>
+                    content={"Subscribe Now"}
+                    className="bg-gray_ hover:bg-gray_/80 w-full mt-6"
+                  />
                 </form>
               </div>
             </div>
@@ -253,8 +239,9 @@ const Footer = () => {
 
         <div className="mt-12 border-t  pt-8 sm:mt-16 lg:mt-20">
           <div className="text-center">
-            <Typography variant="Medium_H6" className="text-gray_ block">
-              © Copyright {currentYear}, All Rights Reserved by hungrymeh.com
+            <Typography variant="Medium_H6" className="text-stock block">
+              © Copyright {currentYear} - All Rights Reserved by Metabola.in |
+              Designed by Peacockindia
             </Typography>
           </div>
         </div>
