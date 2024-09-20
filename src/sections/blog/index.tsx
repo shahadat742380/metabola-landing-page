@@ -29,7 +29,7 @@ const Blog = () => {
     <section id="blog" className="py-12  sm:py-16 lg:py-20">
       <div className="mx-auto max-w-[1336px] px-4 sm:px-6 lg:px-8 ">
         <div className="text-center ">
-          <Typography variant="SemiBold_H3" className="text-title block">
+          <Typography variant="SemiBold_H3" className="block">
             Read <span className="text-primary">Our Blog</span>
           </Typography>
           <Typography variant="Regular_H6" className="text-gray_ block mt-2">

@@ -67,7 +67,7 @@ const Faq: React.FC<FaqProps> = ({ bgColor }) => {
     <section className="py-16 md:py-20 lg:py-[100px] bg-background">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-[1336px]  ">
         <div className="text-center">
-          <Typography variant="Medium_H3" className={`text-title block`}>
+          <Typography variant="Medium_H3" className={` block`}>
             Frequently <span className="text-primary">Asked Questions</span>
           </Typography>
           <Typography

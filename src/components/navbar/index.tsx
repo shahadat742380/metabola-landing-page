@@ -84,7 +84,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex-shrink-0 z-20">
             <Link href="/" className="text-primary_ flex gap-3 items-center">
-              <Logo />
+              <Logo className="h-8 md:h-[42px] w-auto"/>
             </Link>
           </div>
 

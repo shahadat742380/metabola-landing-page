@@ -29,14 +29,14 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
-  title: "Hungry Meh",
+  title: "Metabola",
   description:
-    " Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil            impedit quo minus id quod maxime placeat",
-  keywords: ["Hungry Meh"],
+    " Lorem ipsum dolor sit amet consectetur. Fermentum volutpat egestas interdum bibendum. Urna nibh lectus cursus tortor sagittis fringilla sagittis a. Consequat dolor amet faucibus tincidunt. Consectetur massa integer purus mi risus leo",
+  keywords: ["Metabola"],
   openGraph: {
-    title: "Hungry Meh",
+    title: "Metabola",
     description:
-      " Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat",
+      "Lorem ipsum dolor sit amet consectetur. Fermentum volutpat egestas interdum bibendum. Urna nibh lectus cursus tortor sagittis fringilla sagittis a. Consequat dolor amet faucibus tincidunt. Consectetur massa integer purus mi risus leo",
     url,
     type: "website",
     images: [
@@ -44,10 +44,10 @@ export const metadata: Metadata = {
         url: `${url}/Logo.png`, // Corrected string interpolation
         width: 1200,
         height: 630,
-        alt: "Hungry Meh banner",
+        alt: "Metabola banner",
       },
     ],
-    siteName: "Hungry Meh",
+    siteName: "Metabola",
   },
   alternates: {
     canonical: url,
@@ -55,9 +55,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@hungryMehTwitterHandle", // Replace with VVPS Twitter handle later
-    title: "Hungry Meh",
+    title: "Metabola",
     description:
-      " Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil   impedit quo minus id quod maxime placeat",
+      "Lorem ipsum dolor sit amet consectetur. Fermentum volutpat egestas interdum bibendum. Urna nibh lectus cursus tortor sagittis fringilla sagittis a. Consequat dolor amet faucibus tincidunt. Consectetur massa integer purus mi risus leo",
     images: [`${url}/Logo.png`],
   },
 };

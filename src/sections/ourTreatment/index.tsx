@@ -11,16 +11,6 @@ import img5 from "@/assets/images/treatment/img5.png";
 // import component
 import { Typography } from "@/components/ui/Typography";
 
-// import icons
-import {
-  IcoBanner,
-  IcoDot,
-  IcoFood,
-  IcoHome,
-  IcoLoad,
-  IcoQr,
-} from "@/assets/svg";
-
 interface CardData {
   img: StaticImageData;
   title: string;
@@ -68,7 +58,7 @@ const OurTreatment = () => {
     >
       <div className="mx-auto max-w-[1336px] px-4 sm:px-6 lg:px-8 ">
         <div className="text-center ">
-          <Typography variant="SemiBold_H3" className="text-title block">
+          <Typography variant="SemiBold_H3" className=" block">
             Our <span className="text-primary">Treatment</span>
           </Typography>
           <Typography variant="Regular_H6" className="text-gray_ block mt-2">

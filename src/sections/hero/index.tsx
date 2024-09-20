@@ -51,7 +51,7 @@ const Hero = () => {
     <section>
       <Carousel
         infinite={true}
-        autoPlay={true}
+        // autoPlay={true}
         autoPlaySpeed={3000}
         showDots={true}
         arrows={false}
@@ -59,15 +59,15 @@ const Hero = () => {
         responsive={responsive}
       >
         {/* Slider 1 */}
-        <section className="relative overflow-hidden py-16 sm:py-20  lg:py-64">
+        <section className="relative overflow-hidden py-16 sm:py-20  lg:py-64 h-full">
           <div className="absolute inset-0 h-full">
             <Image
-              width={1753}
-              height={927}
+              width={1512}
+              height={896}
               src={bg1}
               alt="Background image"
               placeholder="blur"
-              className="h-full w-full object-cover object-[-70vh]   md:origin-top-left  md:object-center"
+              className="h-full w-full object-cover object-right   md:origin-top-left  md:object-center"
             />
           </div>
           {/* Gradient effect */}
@@ -98,15 +98,15 @@ const Hero = () => {
           </div>
         </section>
         {/* Slider 2 */}
-        <section className="relative overflow-hidden py-16 sm:py-20  lg:py-64">
+        <section className="relative overflow-hidden py-16 sm:py-20  lg:py-64 h-full">
           <div className="absolute inset-0 h-full">
             <Image
-              width={1753}
-              height={927}
+              width={1512}
+              height={896}
               src={bg2}
               alt="Background image"
               placeholder="blur"
-              className="h-full w-full object-cover object-[-70vh]   md:origin-top-left  md:object-center"
+              className="h-full w-full object-cover object-right   md:origin-top-left  md:object-center"
             />
           </div>
           {/* Gradient effect */}
@@ -136,15 +136,15 @@ const Hero = () => {
           </div>
         </section>
         {/* Slider 3 */}
-        <section className="relative overflow-hidden py-16 sm:py-20  lg:py-64">
+        <section className="relative overflow-hidden py-16 sm:py-20  lg:py-64 h-full">
           <div className="absolute inset-0 h-full">
             <Image
-              width={1753}
-              height={927}
+              width={1512}
+              height={896}
               src={bg3}
               alt="Background image"
               placeholder="blur"
-              className="h-full w-full object-cover object-[-70vh]   md:origin-top-left  md:object-center"
+              className="h-full w-full object-cover object-right   md:origin-top-left  md:object-center"
             />
           </div>
           {/* Gradient effect */}
