@@ -79,6 +79,7 @@ const OurTreatment = () => {
                     alt={data.title}
                     height={218}
                     width={202}
+                      placeholder="blur"
                     className="object-contain"
                   />
                 </div>

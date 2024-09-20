@@ -1,16 +1,17 @@
-
-
 // import component
 import BtnPrimary from "@/components/ui/BtnPrimary";
 import { Typography } from "@/components/ui/Typography";
 
 // import image
-import founder from "@/assets/images/founder/doctor.png"
+import founder from "@/assets/images/founder/doctor.png";
 import Image from "next/image";
 
 const Founder = () => {
   return (
-    <section id="services" className="relative pt-12 md:pt-16 lg:pt-20 bg-background">
+    <section
+      id="services"
+      className="relative pt-12 md:pt-16 lg:pt-20 bg-background"
+    >
       <div className="mx-auto max-w-[1336px] px-4 sm:px-6 lg:px-8 ">
         <div className="text-center ">
           <Typography variant="SemiBold_H3" className=" block">
@@ -32,10 +33,16 @@ const Founder = () => {
         </div>
       </div>
       <div className="lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:bottom-0 flex justify-center mt-6 lg:mt-0">
-        <Image src={founder} alt="founder image" />
+        <Image
+          src={founder}
+          alt="founder image"
+          placeholder="blur"
+          height={650}
+          width={550}
+        />
       </div>
       <div className="lg:mt-10  bg-primary">
-        <div className="pt-[50px] pb-[56px] flex justify-between items-center gap-2 sm:gap-6 mx-auto max-w-[1336px] px-4 sm:px-6 lg:px-8 ">
+        <div className="py-8 md:pt-[50px] md:pb-[56px] flex justify-between items-center gap-2 sm:gap-6 mx-auto max-w-[1336px] px-4 sm:px-6 lg:px-8 ">
           <div>
             <Typography
               variant="Bold_H3"

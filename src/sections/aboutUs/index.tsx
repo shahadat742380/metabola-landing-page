@@ -23,6 +23,7 @@ const AboutUs = () => {
             width={526}
             alt="about image"
             className="object-cover"
+            placeholder="blur"
           />
         </div>
         <div className="py-10 lg:py-[69px]">

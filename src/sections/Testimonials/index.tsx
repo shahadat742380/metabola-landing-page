@@ -28,12 +28,14 @@ const Testimonials = () => {
       role: "President of Sales",
       desc: "Lorem ipsum dolor sit amet consectetur. Vitae quis mauris facilisis pharetra massa eget. Vestibulum penatibus id ipsum ultrices viverra tristique libero risus. Volutpat lacus morbi eget ultrices faucibus elit sed. Sit mattis risus ut.",
     },
-    {img: avatar2,
+    {
+      img: avatar2,
       name: "Courtney Henry",
       role: "Dog Trainer",
       desc: "Lorem ipsum dolor sit amet consectetur. Vestibulum lectus condimentum pretium eu vitae. Facilisis cras ut id faucibus tincidunt vitae. Cras sed laoreet nisi sapien fusce dolor gravida. Et amet dignissim ullamcorper purus.",
     },
-    {img: avatar3,
+    {
+      img: avatar3,
       name: "Robert Fox",
       role: "Medical Assistant",
       desc: "Lorem ipsum dolor sit amet consectetur. Consequat metus ut mollis nunc. Lacinia nibh nibh consectetur dolor. Sit orci urna pellentesque non at. Ornare non sed faucibus sit quis. Vitae condimentum ut lorem morbi et.",
@@ -44,17 +46,18 @@ const Testimonials = () => {
       role: "President of Sales",
       desc: "Lorem ipsum dolor sit amet consectetur. Vitae quis mauris facilisis pharetra massa eget. Vestibulum penatibus id ipsum ultrices viverra tristique libero risus. Volutpat lacus morbi eget ultrices faucibus elit sed. Sit mattis risus ut.",
     },
-    {img: avatar2,
+    {
+      img: avatar2,
       name: "Courtney Henry",
       role: "Dog Trainer",
       desc: "Lorem ipsum dolor sit amet consectetur. Vestibulum lectus condimentum pretium eu vitae. Facilisis cras ut id faucibus tincidunt vitae. Cras sed laoreet nisi sapien fusce dolor gravida. Et amet dignissim ullamcorper purus.",
     },
-    {img: avatar3,
+    {
+      img: avatar3,
       name: "Robert Fox",
       role: "Medical Assistant",
       desc: "Lorem ipsum dolor sit amet consectetur. Consequat metus ut mollis nunc. Lacinia nibh nibh consectetur dolor. Sit orci urna pellentesque non at. Ornare non sed faucibus sit quis. Vitae condimentum ut lorem morbi et.",
     },
-   
   ];
   return (
     <section className="py-16 md:py-20 lg:py-[120px] bg-primary">
@@ -121,7 +124,14 @@ const Testimonials = () => {
 
                         <div className="flex items-center mt-[34px] justify-between">
                           <div className="flex items-center">
-                            <Image src={obj?.img} alt={obj.name} className="rounded-full h-[43px] w-43px" />
+                            <Image
+                              src={obj?.img}
+                              alt={obj.name}
+                              className="rounded-full h-[43px] w-43px"
+                              height={43}
+                              width={43}
+                              placeholder="blur"
+                            />
                             <div className="ml-4">
                               <Typography
                                 variant="Bold_H6"

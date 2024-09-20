@@ -41,7 +41,7 @@ const Banner = () => {
           <div className="mt-8 ">
             <BtnPrimary
               content={"Contact us"}
-              className="bg-white text-primary"
+              className="bg-white text-primary hover:bg-white/80"
             />
           </div>
         </div>

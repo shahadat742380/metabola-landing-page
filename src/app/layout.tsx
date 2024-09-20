@@ -19,7 +19,7 @@ const poppins = Poppins({
   display: "swap",
 });
 
-const url = "https://hungrymeh-website.vercel.app"; // Replace the URL
+const url = "https://metabola-website.vercel.app"; // Replace the URL
 export const metadata: Metadata = {
   robots: {
     index: true,
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@hungryMehTwitterHandle", // Replace with VVPS Twitter handle later
+    site: "@metabolaTwitterHandle", // Replace with VVPS Twitter handle later
     title: "Metabola",
     description:
       "Lorem ipsum dolor sit amet consectetur. Fermentum volutpat egestas interdum bibendum. Urna nibh lectus cursus tortor sagittis fringilla sagittis a. Consequat dolor amet faucibus tincidunt. Consectetur massa integer purus mi risus leo",

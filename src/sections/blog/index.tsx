@@ -48,7 +48,7 @@ const Blog = () => {
                     alt={obj.title}
                     width={500}
                     height={500}
-                    layout="responsive"
+                    placeholder="blur"
                   />
                 </div>
               </div>
